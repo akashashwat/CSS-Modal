@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+  position: relative;
+  min-height: 100vh;
+  background-color: #fefefe;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+}
+
+img {
+  border-radius: 50%;
+  border: 2px solid #ddd;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 480px;
+  width: 100%;
+  padding: 1.3rem;
+  position: absolute;
+  top: 20%;
+  background-color: #fff;
+  z-index: 999;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  animation: zoomIn 0.3s ease forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.modal .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal input {
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9em;
+  font-family: inherit;
+  margin-bottom: 1rem;
+}
+
+.modal span {
+  color: #777;
+}
+
+.modal h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2rem;
+  margin: 1.5rem 0;
+}
+
+.btn-signup {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  font-weight: 700;
+  background-color: black;
+  color: #fefefe;
+  border-radius: 6px;
+}
+
+.wrapper {
+  border: 2px solid #ddd;
+  padding: 0.5rem;
+  max-width: 500px;
+  min-width: 365px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 6px;
+  margin: auto;
+}
+
+.btn-open {
+  margin-block: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: black;
+  color: #fefefe;
+  border-radius: 6px;
+  font-size: large;
+}
+
+.btn-open:hover {
+  background-color: #222;
+  box-shadow: rgba(0, 0, 0, 0.15) 4.75px 4.75px 5.75px;
+  transition: all 0.3s ease;
+  transform: translateY(-2px);
+}
+
+.btn-close {
+  transform: translate(10px, -20px);
+  padding: 0.2rem 0.5rem;
+  background: #f1f0f0;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #777;
+}
+
+.btn-close:hover {
+  color: #222;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+  z-index: 100;
+}
+
+.hidden {
+  display: none;
+}

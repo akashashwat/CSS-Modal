@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Modal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="modal hidden">
+      <!-- The section element with a class of modal will serve as our modal
+      container. -->
+
+      <div class="flex">
+        <img src="https://i.pravatar.cc/50" alt="user" />
+        <span>Brand Name</span>
+        <button class="btn-close">&times;</button>
+      </div>
+
+      <div class="body">
+        <h3>
+          Sign up for email to enjoy complimentary shipping on your first order.
+        </h3>
+      </div>
+
+      <input type="email" placeholder="Enter your mail here" />
+
+      <button class="btn-signup">Sign up</button>
+    </section>
+
+    <div class="overlay hidden">
+      <!-- The div with the class of overlay will serve as our overlay element. This
+      is the dark blurred background we see when the modal is open. -->
+    </div>
+
+    <div class="wrapper">
+      <h1>Click to open modal</h1>
+      <button class="btn btn-open">
+        <!-- The button with the class of btn and btn-open will serve as our modal button so it opens our modal when we click this button. -->
+        Open
+      </button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
